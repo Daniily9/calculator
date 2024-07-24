@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переводач одиниць виміру</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body1">
+    <ul class="nav">
+        <li class="nav-item logo">
+            <a href="index.html"><img class="img1" src="https://v.od.ua/uploads/92/logo.png"></a>
+            <div class="info">
+                <h3 class="author">Автор</h3>
+                <img class="img2" src="IMG_20240126_053448.jpg">
+                <h4 class="sss">Коротка інформація про автора:</h4>
+                <p class="sss">Мене звати Саган Данії.Мені 17 років.Вчусь на 3 курсі 121 спеціальності у МПФК.</p>
+            </div>
+        </li>
+        <a href="calculator.html" class="nav-item">Калькулятор</a>
+        <a href="m,mm,cm,km.html" class="nav-item">Конвертер мат.</a>
+        <a href="b,kb,mb,gm,tb.html" class="nav-item">Конвертер інф.</a>
+        <a href="Fibanachi.html" class="nav-item">Фібоначчі</a>
+    </ul>
+
+    <h1 class="author">Переводач одиниць виміру</h1>
+
+<div class="con1">
+    <label for="from">З:</label>
+    <select id="from">
+        <option value="кілометри">Кілометри</option>
+        <option value="метри">Метри</option>
+        <option value="сантиметри">Сантиметри</option>
+        <option value="дециметри">Дециметри</option>
+        <option value="міліметри">Міліметри</option>
+    </select>
+
+    <label for="to">В:</label>
+    <select id="to">
+        <option value="кілометри">Кілометри</option>
+        <option value="метри">Метри</option>
+        <option value="сантиметри">Сантиметри</option>
+        <option value="дециметри">Дециметри</option>
+        <option value="міліметри">Міліметри</option>
+    </select>
+</div>
+
+<div class="con2">
+    <label for="value">Значення:</label>
+    <input type="number" id="value">
+
+    <button class="roz" onclick="convert()">Перевести</button>
+
+    <label for="result">Результат:</label>
+    <input type="number" id="result" disabled>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переводач одиниць виміру</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        select, input[type="number"], button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body class="body1">
+    <ul class="nav">
+        <li class="nav-item logo">
+            <a href="index.html"><img class="img1" src="https://v.od.ua/uploads/92/logo.png"></a>
+            <div class="info">
+                <h3 class="author">Автор</h3>
+                <img class="img2" src="IMG_20240126_053448.jpg">
+                <h4 class="sss">Коротка інформація про автора:</h4>
+                <p class="sss">Мене звати Саган Данії.Мені 17 років.Вчусь на 3 курсі 121 спеціальності у МПФК.</p>
+            </div>
+        </li>
+        <a href="calculator.html" class="nav-item">Калькулятор</a>
+        <a href="m,mm,cm,km.html" class="nav-item">Конвертер мат.</a>
+        <a href="b,kb,mb,gm,tb.html" class="nav-item">Конвертер інф.</a>
+        <a href="Fibanachi" class="nav-item">Фібоначчі</a>
+    </ul>
+
+    <h1 class="author">Генератор чисел Фібоначчі</h1>
+
+<div class="con1">
+    <label for="count">Кількість чисел Фібоначчі:</label>
+    <input type="number" id="count">
+
+    <button class="roz" onclick="generate()">Генерувати</button>
+
+    <label for="result">Результат:</label>
+    <textarea id="result" disabled></textarea>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>

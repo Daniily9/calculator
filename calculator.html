@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator - Version 1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body1">
+    <ul class="nav">
+        <li class="nav-item logo">
+            <a href="index.html"><img class="img1" src="https://v.od.ua/uploads/92/logo.png"></a>
+            <div class="info">
+                <h3 class="author">Автор</h3>
+                <img class="img2" src="IMG_20240126_053448.jpg">
+                <h4>Коротка інформація про автора:</h4>
+                <p>Мене звати Саган Данії.Мені 17 років.Вчусь на 3 курсі 121 спеціальності у МПФК.</p>
+            </div>
+        </li>
+        <a href="calculator.html" class="nav-item">Калькулятор</a>
+        <a href="m,mm,cm,km.html" class="nav-item">Конвертер мат.</a>
+        <a href="b,kb,mb,gm,tb.html" class="nav-item">Конвертер інф.</a>
+        <a href="Fibanachi.html" class="nav-item">Фібоначчі</a>
+    </ul>
+    <h1 class="author">Калькулятор</h1>
+    <div class="cal">
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <br>
+        <button class="calh" onclick="addToDisplay('7')">7</button>
+        <button class="calh" onclick="addToDisplay('8')">8</button>
+        <button class="calh" onclick="addToDisplay('9')">9</button>
+        <button class="calh" onclick="addToDisplay('+')">+</button>
+        <br>
+        <button class="calh" onclick="addToDisplay('4')">4</button>
+        <button class="calh" onclick="addToDisplay('5')">5</button>
+        <button class="calh" onclick="addToDisplay('6')">6</button>
+        <button class="calh" onclick="addToDisplay('-')">-</button>
+        <br>
+        <button class="calh" onclick="addToDisplay('1')">1</button>
+        <button class="calh" onclick="addToDisplay('2')">2</button>
+        <button class="calh" onclick="addToDisplay('3')">3</button>
+        <button class="calh" onclick="addToDisplay('*')">*</button>
+        <br>
+        <button class="calh" onclick="addToDisplay('0')">0</button>
+        <button class="calh" onclick="clearDisplay()">C</button>
+        <button class="calh" onclick="calculateResult()">=</button>
+        <button class="calh" onclick="addToDisplay('/')">/</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
